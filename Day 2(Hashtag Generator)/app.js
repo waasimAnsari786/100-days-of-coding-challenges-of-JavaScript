@@ -1,5 +1,5 @@
 const hashtagGenratorFunc = (str) => {
-    let trimmedStr = str.trim();
+    let trimmedStr = str.toString().trim();
 
     if (trimmedStr.length > 0) {
         let splitedStr = trimmedStr.split(" ");
@@ -14,4 +14,4 @@ const hashtagGenratorFunc = (str) => {
     };
 };
 
-console.log(hashtagGenratorFunc('ready for t20 world cup 2024'));
+console.log(hashtagGenratorFunc(2024));
