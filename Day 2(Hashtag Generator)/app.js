@@ -18,7 +18,7 @@ let btn = document.querySelector("button");
 const hashtagGenratorFunc = (str) => {
     let trimmedStr = str.toString().trim();
 
-    if (trimmedStr.length > 0) {
+    if (trimmedStr.length > 0 || trimmedStr.length < 280) {
         let splitedStr = trimmedStr.split(" ");
         let toUpperCaseStr = splitedStr.map(currElem => currElem.replace(currElem[0] , currElem[0].toUpperCase()));
         let joinedArr = toUpperCaseStr.join("");
