@@ -13,3 +13,4 @@ const generateRange = (num, range) => {
 };
 
 console.log(generateRange(50, 40));
+console.log(generateRange(-50, 40));

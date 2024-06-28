@@ -1,0 +1,30 @@
+.main-div-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    text-transform: capitalize;
+}
+
+.image-btn{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-ctnr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body img {
+    border-radius: 2rem 0 2rem 0;
+}
+
+.rough{
+    border: .1rem solid black;
+}
