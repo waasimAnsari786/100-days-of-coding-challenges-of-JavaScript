@@ -81,7 +81,7 @@ const displayImgs = (imgField) => {
     if (i > 0) {
       if (curVal.field === imgField || curVal.imgName === imgField) {
         let imgDiv = document.createElement("div");
-        imgDiv.classList.add("col-xxl-4", "col-xl-4", "col-lg-4", "col-md-6", "col-sm-6", "mx-auto", "img-div");
+        imgDiv.classList.add("col-xxl-4", "col-xl-4", "col-lg-4", "col-md-6", "col-sm-6", "img-div");
         imgDiv.innerHTML = `<div class="img-div-inner mt-4 col-12">
                               <img src=${curVal.img} class="w-100" height="300rem" alt="images"/>
                               </div>`;
