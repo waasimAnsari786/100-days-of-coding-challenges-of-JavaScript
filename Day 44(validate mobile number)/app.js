@@ -1,8 +1,10 @@
-const extractNumbers = (str) => {
-    let splitedArr = str.split(/\D/);
-    return splitedArr.filter(curVal => !isNaN(curVal) && curVal !== '')
+const validateMblNum = (mblNum) => {
+    return `${mblNum} ${/^(03[0-4][\d][\d]{7})|(\+923[0-4][\d][\d]{7})$/.test(mblNum.replace(/\s/g , ''))}`;
 };
 
-console.log(extractNumbers('ygygj7654chgf654'));
-console.log(extractNumbers('765454 grdrgd 689,997'));
-console.log(extractNumbers('7a6v5f4f5r4r'));
+console.log(validateMblNum('+92 300 1234567'));
+console.log(validateMblNum('+92 321 9876543'));
+console.log(validateMblNum('0321 9876543'));
+console.log(validateMblNum('0499 9876543'));
+console.log(validateMblNum('+92 30 1234567'));
+console.log(validateMblNum('+92 300 12345'));
